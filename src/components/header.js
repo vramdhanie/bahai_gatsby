@@ -1,29 +1,15 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
+import Logo from "./logo"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+const Header = ({ className, siteTitle }) => (
+  <header className={className}>
+    <div className="logo">
+      <Logo />
+      <h1 className="siteName">
+        <Link to="/" className="siteNameLink">
           {siteTitle}
         </Link>
       </h1>
@@ -39,4 +25,24 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default styled(Header)`
+  position: absolute;
+  z-index: 1000;
+  padding: 10px;
+
+  .siteName {
+    font-size: 1.2rem;
+    text-shadow: 00 2px 1px rgba(0, 0, 0, 0.4);
+    padding-left: 5px;
+  }
+
+  .siteNameLink {
+    color: white;
+    text-decoration: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+`
