@@ -1,21 +1,35 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Parallax from "../components/parallax"
+import Banner from "../components/banner"
+import Main from "../components/main"
+import Bicentenary from "../components/bicentenary"
+import HomeFeature from "../components/homefeature"
+import CommunityFeature from "../components/communityFeature"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Parallax>
+        <Banner
+          title="The Bicentenary of the Birth of the Báb"
+          blurb="Celebrating the 200th anniversary of the Birth of the Báb, the one who foretold the coming of Bahá’u’lláh, the founder of the Baha'i Faith."
+        />
+        <AniLink fade to="/bicentenary" className="btn-white btn-small">
+          Read more
+        </AniLink>
+      </Parallax>
+      <Main>
+        <Bicentenary />
+        <HomeFeature />
+        <CommunityFeature />
+      </Main>
+    </Layout>
+  )
+}
 
 export default IndexPage
