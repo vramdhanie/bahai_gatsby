@@ -10,10 +10,12 @@ import HomeFeature from "../components/home/homefeature"
 import CommunityFeature from "../components/home/communityFeature"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-const IndexPage = () => {
+import { graphql } from "gatsby"
+
+const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Bahá’ís of Trinidad and Tobago" />
       <Parallax>
         <Banner
           title="The Bicentenary of the Birth of the Báb"
@@ -26,10 +28,33 @@ const IndexPage = () => {
       <Main>
         <Bicentenary />
         <HomeFeature />
-        <CommunityFeature />
+        <CommunityFeature activities={data.activities.edges} />
       </Main>
     </Layout>
   )
 }
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    activities: allMdx(sort: { fields: frontmatter___order, order: ASC }) {
+      edges {
+        node {
+          frontmatter {
+            title
+            slug
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`

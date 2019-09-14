@@ -3,6 +3,7 @@ module.exports = {
     title: `Bahá’ís of Trinidad and Tobago`,
     description: `The official website of the Bahá’ís of Trinidad and Tobago.`,
     author: `@vramdhanie`,
+    siteUrl: `https://bahaitt.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -37,6 +38,20 @@ module.exports = {
       options: {
         name: `articles`,
         path: `${__dirname}/src/content/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        plugins: [`gatsby-remark-images`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
