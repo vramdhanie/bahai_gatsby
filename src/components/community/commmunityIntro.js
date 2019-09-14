@@ -33,4 +33,7 @@ const CommmunityIntro = ({ className }) => {
 export default styled(CommmunityIntro)`
   padding: 1rem;
   font-weight: 300;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
 `
