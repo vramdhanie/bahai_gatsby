@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Title from "./title"
+import Title from "../title"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 

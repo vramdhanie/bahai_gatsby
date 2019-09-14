@@ -7,6 +7,8 @@ import Title from "../components/title"
 import Hero from "../components/hero"
 import Banner from "../components/banner"
 import Main from "../components/main"
+import BahaIntro from "../components/bahaullah/bahaIntro"
+
 const Bahaullah = ({ data }) => (
   <Layout>
     <SEO title="Bahá’u’lláh - The Glory of God" />
@@ -14,9 +16,7 @@ const Bahaullah = ({ data }) => (
       <Banner title="Bahá’u’lláh" blurb="The Glory of God"></Banner>
     </Hero>
     <Main>
-      <Title title="Bahá’u’lláh" subtitle="" />
-      <p>The Promised One foretold by all the Divine Messengers</p>
-      <Link to="/">Go back to the homepage</Link>
+      <BahaIntro />
     </Main>
   </Layout>
 )

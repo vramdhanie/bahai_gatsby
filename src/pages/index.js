@@ -5,9 +5,9 @@ import SEO from "../components/seo"
 import Parallax from "../components/parallax"
 import Banner from "../components/banner"
 import Main from "../components/main"
-import Bicentenary from "../components/bicentenary"
-import HomeFeature from "../components/homefeature"
-import CommunityFeature from "../components/communityFeature"
+import Bicentenary from "../components/home/bicentenary"
+import HomeFeature from "../components/home/homefeature"
+import CommunityFeature from "../components/home/communityFeature"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const IndexPage = () => {

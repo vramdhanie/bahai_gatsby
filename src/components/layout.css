@@ -672,6 +672,14 @@ main {
   flex-direction: column;
   flex-grow: 2;
 }
+
+blockquote .author {
+  text-align: right;
+}
+blockquote {
+  color: var(--secondaryDark);
+  font-style: italic;
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

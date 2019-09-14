@@ -3,10 +3,10 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Title from "../components/title"
 import Hero from "../components/hero"
 import Banner from "../components/banner"
 import Main from "../components/main"
+import BicentenaryIntro from "../components/bicentenary/bicentenaryIntro"
 
 const Bicentenary = ({ data }) => (
   <Layout>
@@ -15,9 +15,7 @@ const Bicentenary = ({ data }) => (
       <Banner title="Bicentenary of" blurb="the Birth of The Báb"></Banner>
     </Hero>
     <Main>
-      <Title title="Bicentenary of the birth of the Báb" />
-      <p>Celebrating the 200th anniversary of The birth of The Báb.</p>
-      <Link to="/">Go back to the homepage</Link>
+      <BicentenaryIntro />
     </Main>
   </Layout>
 )

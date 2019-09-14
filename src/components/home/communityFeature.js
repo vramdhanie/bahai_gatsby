@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Title from "../components/title"
+import Title from "../title"
 const CommunityFeature = ({ className }) => {
   return (
     <section className={className}>
@@ -41,7 +41,6 @@ export default styled(CommunityFeature)`
     text-shadow: 1px 1px 2px var(--secondaryDark);
   }
 
-  border-bottom: solid 2px rgba(219, 132, 10, 0.2);
   margin-bottom: 10px;
 
   background: #ffffff;

@@ -7,7 +7,9 @@ import Logo from "./logo"
 const Header = ({ className, siteTitle }) => (
   <header className={className}>
     <div className="logo">
-      <Logo />
+      <Link to="/" className="siteNameLink">
+        <Logo />
+      </Link>
       <h1 className="siteName">
         <Link to="/" className="siteNameLink">
           {siteTitle}
