@@ -10,11 +10,11 @@ import Main from "../components/main"
 
 const Community = ({ data }) => (
   <Layout>
-    <SEO title="Community Building - What Baha'is do" />
+    <SEO title="Community Building - What Bahá’ís do" />
     <Hero img={data.birthBg.childImageSharp.fluid}>
       <Banner
         title="Community Building"
-        blurb="The work of the Baha'is"
+        blurb="The work of the Bahá’ís"
       ></Banner>
     </Hero>
     <Main>

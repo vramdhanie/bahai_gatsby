@@ -24,6 +24,8 @@ export default styled(CommunityFeature)`
   font-weight: 300;
   padding: 4rem 0;
   width: 80vw;
+
+  max-width: 1170px;
   margin: 0 auto;
 
   margin-bottom: 10px;
@@ -33,6 +35,8 @@ export default styled(CommunityFeature)`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    width: 95%;
   }
 
   @media screen and (min-width: 768px) {
@@ -52,8 +56,6 @@ export default styled(CommunityFeature)`
     .feature-centre {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-column-gap: 2rem;
-      width: 95%;
-      max-width: 1170px;
     }
   }
 `

@@ -55,9 +55,11 @@ const HomeFeature = ({ className }) => {
 export default styled(HomeFeature)`
   font-weight: 300;
   padding: 4rem 0;
+
   .feature-center {
-    width: 80vw;
+    width: 80%;
     margin: 0 auto;
+    max-width: 800px;
   }
   .feature-img {
     margin: 3rem 0;
