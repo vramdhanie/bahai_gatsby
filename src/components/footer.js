@@ -27,6 +27,11 @@ const Footer = ({ className }) => {
           </address>
         </div>
         <div className="footer-links">
+          <div className="international">
+            <a href="https://bahai.org" className="international_link">
+              Bahai.org - The website of the worldwide Baha'i community
+            </a>
+          </div>
           <div className="links">
             <AniLink fade to="/bicentenary" className="footer-link-main">
               bicentenary
@@ -47,7 +52,7 @@ const Footer = ({ className }) => {
             <AniLink fade to="/legal" className="footer-link-small">
               Legal
             </AniLink>
-            <AniLink fade to="/privacy" className="footer-link-small">
+            <AniLink fade to="/legal" className="footer-link-small">
               Privacy
             </AniLink>
           </div>
@@ -112,6 +117,9 @@ export default styled(Footer)`
     flex-direction: column;
   }
 
+  .footer-links {
+    flex-grow: 2;
+  }
   .identity {
     display: flex;
     flex-direction: column;
@@ -160,6 +168,25 @@ export default styled(Footer)`
   .links_small a:hover {
     color: var(--secondaryDark);
   }
+
+  .international {
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .international_link {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--secondaryDark);
+    padding: 0.5rem;
+    box-shadow: 0 0 1px 1px rgba(164, 87, 0, 0.2);
+    transition: var(--mainTransition);
+  }
+
+  .international_link:hover {
+    color: var(--primaryDark);
+  }
+
   @media (min-width: 776px) {
     .footer_top {
       flex-direction: row;
