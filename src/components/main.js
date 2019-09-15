@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const Main = ({ className, children }) => {
-  return <main className={className}>{children}</main>
+  return <section className={className}>{children}</section>
 }
 
 export default styled(Main)`
