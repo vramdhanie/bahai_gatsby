@@ -7,6 +7,7 @@ import CommunityIntro from "../components/community/commmunityIntro"
 import Hero from "../components/hero"
 import Banner from "../components/banner"
 import Main from "../components/main"
+import ActivityList from "../components/community/activitylist"
 
 const Community = ({ data }) => (
   <Layout>
@@ -19,6 +20,7 @@ const Community = ({ data }) => (
     </Hero>
     <Main>
       <CommunityIntro />
+      <ActivityList />
     </Main>
   </Layout>
 )
