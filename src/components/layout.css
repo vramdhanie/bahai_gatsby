@@ -679,6 +679,7 @@ blockquote .author {
 blockquote {
   color: var(--secondaryDark);
   font-style: italic;
+  margin-top: 1rem;
 }
 @media only screen and (max-width: 480px) {
   html {
