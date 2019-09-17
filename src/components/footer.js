@@ -13,7 +13,7 @@ const Footer = ({ className }) => {
           <div className="bahai">The Bahá’í Faith</div>
           <address>
             <div className="email">
-              <MdMailOutline /> info@bahaitt.com
+              <MdMailOutline /> nsabahaitt@gmail.com
             </div>
             <div className="phone">
               <MdPhone /> 1 (868) 625-5196
