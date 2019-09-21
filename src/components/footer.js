@@ -44,6 +44,10 @@ const Footer = ({ className }) => {
             <AniLink fade to="/community" className="footer-link-main">
               Community Building
             </AniLink>
+
+            <AniLink fade to="/abdulbaha" className="footer-link-main">
+              Abdu'l-Baha
+            </AniLink>
           </div>
           <div className="links_small">
             <AniLink fade to="/contact" className="footer-link-small">

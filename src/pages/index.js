@@ -9,6 +9,7 @@ import Bicentenary from "../components/home/bicentenary"
 import HomeFeature from "../components/home/homefeature"
 import CommunityFeature from "../components/home/communityFeature"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import AbdulbahaFeature from "../components/home/abdulbahafeature"
 
 import { graphql } from "gatsby"
 
@@ -29,6 +30,7 @@ const IndexPage = ({ data }) => {
         <Bicentenary />
         <HomeFeature />
         <CommunityFeature activities={data.activities.edges} />
+        <AbdulbahaFeature />
       </Main>
     </Layout>
   )
