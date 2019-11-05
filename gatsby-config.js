@@ -54,27 +54,27 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-firesource`,
-      options: {
-        credential: require("./firebase_credentials.json"),
-        types: [
-          {
-            type: "Activity",
-            collection: "activity",
-            map: doc => ({
-              title: doc.title,
-              slug: doc.slug,
-              image: doc.image,
-              tags: doc.tags,
-              blurb: doc.blurb,
-              order: doc.order,
-              body: doc.body,
-            }),
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-firesource`,
+    //   options: {
+    //     credential: require("./firebase_credentials.json"),
+    //     types: [
+    //       {
+    //         type: "Activity",
+    //         collection: "activity",
+    //         map: doc => ({
+    //           title: doc.title,
+    //           slug: doc.slug,
+    //           image: doc.image,
+    //           tags: doc.tags,
+    //           blurb: doc.blurb,
+    //           order: doc.order,
+    //           body: doc.body,
+    //         }),
+    //       },
+    //     ],
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
