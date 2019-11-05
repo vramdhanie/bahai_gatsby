@@ -7,6 +7,8 @@ import Hero from "../components/hero"
 import Banner from "../components/banner"
 import Main from "../components/main"
 import BicentenaryIntro from "../components/bicentenary/bicentenaryIntro"
+import TheGateAlbum from "../components/bicentenary/thegatealbum"
+import BicentenaryFooter from "../components/bicentenary/bicentenaryFooter"
 
 const Bicentenary = ({ data }) => (
   <Layout>
@@ -16,6 +18,8 @@ const Bicentenary = ({ data }) => (
     </Hero>
     <Main>
       <BicentenaryIntro />
+      <TheGateAlbum />
+      <BicentenaryFooter />
     </Main>
   </Layout>
 )
