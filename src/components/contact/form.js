@@ -47,17 +47,17 @@ const Form = ({ className }) => {
           </div>
         </form>
 
-        <iframe
+        {/* <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSf88Oyhsuhi_QzkfPh7PZzxApiyJUSm3TIb8hIR_vNowCcvzQ/viewform?embedded=true"
           width="640"
-          height="947"
+          height="999"
           frameborder="0"
           marginheight="0"
           marginwidth="0"
-          title="contact form"
+          title="Contact Form"
         >
           Loading…
-        </iframe>
+        </iframe> */}
       </div>
     </section>
   )
