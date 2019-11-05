@@ -17,7 +17,7 @@ export default styled(Banner)`
   text-shadow: 0 0 6px black;
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
     margin-top: 1.5rem;
@@ -27,13 +27,13 @@ export default styled(Banner)`
   p {
     width: 85%;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 1.1rem;
     text-transform: uppercase;
   }
   @media screen and (min-width: 768px) {
     h1 {
-      font-size: 4rem;
+      font-size: 2.2rem;
     }
     p {
       width: 70%;
