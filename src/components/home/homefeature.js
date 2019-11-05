@@ -82,7 +82,7 @@ export default styled(HomeFeature)`
   .feature-info h4 {
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: var(--secondary);
+    color: var(--mainWhite);
     text-shadow: 1px 1px 2px var(--secondaryDark);
   }
 
