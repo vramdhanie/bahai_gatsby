@@ -10,8 +10,10 @@ import BicentenaryIntro from "../components/bicentenary/bicentenaryIntro"
 import TheGateAlbum from "../components/bicentenary/thegatealbum"
 import BicentenaryFooter from "../components/bicentenary/bicentenaryFooter"
 import ColourSection from "../components/colourSection"
+import WhiteSection from "../components/whiteSection"
 import Img from "gatsby-image"
 import styled from "styled-components"
+import Title from "../components/title"
 
 const Bicentenary = ({ data, className }) => (
   <Layout>
@@ -42,6 +44,15 @@ const Bicentenary = ({ data, className }) => (
           ))}
         </article>
       </ColourSection>
+      <section className="banner">
+        <Title title="Bicentenary" subtitle="Banner" />
+        <div className="banner-center">
+          <Img
+            fluid={data.banner.childImageSharp.fluid}
+            alt="Banner celebrating the Báb"
+          />
+        </div>
+      </section>
       <BicentenaryFooter />
     </Main>
   </Layout>
@@ -69,6 +80,13 @@ export const query = graphql`
         }
       }
     }
+    banner: file(relativePath: { eq: "bicentenary_banner.png" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
   }
 `
 
@@ -86,6 +104,16 @@ export default styled(Bicentenary)`
     box-shadow: var(--lightShadow);
     margin-bottom: 0.5rem;
   }
+
+  .banner {
+    padding: 4rem 0;
+  }
+  .banner-center {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
   @media screen and (min-width: 992px) {
     .image-group {
       display: grid;
@@ -94,6 +122,13 @@ export default styled(Bicentenary)`
       grid-row-gap: 1rem;
       align-items: center;
       margin-top: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .banner-center {
+      width: 90vw;
+      max-width: 1170px;
     }
   }
 `
