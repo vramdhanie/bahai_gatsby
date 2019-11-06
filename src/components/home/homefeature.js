@@ -83,7 +83,7 @@ export default styled(HomeFeature)`
     font-size: 1.5rem;
     text-transform: uppercase;
     color: var(--mainWhite);
-    text-shadow: 1px 1px 2px var(--secondaryDark);
+    text-shadow: 1px 1px 2px var(--primaryDark);
   }
 
   border-bottom: solid 2px rgba(219, 132, 10, 0.2);
