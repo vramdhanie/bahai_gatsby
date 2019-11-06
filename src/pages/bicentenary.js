@@ -84,12 +84,14 @@ export default styled(Bicentenary)`
   }
   .image-group div {
     box-shadow: var(--lightShadow);
+    margin-bottom: 0.5rem;
   }
   @media screen and (min-width: 992px) {
     .image-group {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 3rem;
+      grid-row-gap: 1rem;
       align-items: center;
       margin-top: 3rem;
     }
