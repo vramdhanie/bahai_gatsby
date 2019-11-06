@@ -4,8 +4,11 @@ import styled from "styled-components"
 const BicentenaryFooter = ({ className }) => {
   return (
     <section className={className}>
-      <div class="follow_link">
-        <a href="https://bicentenary.bahai.org/the-bab/" class="btn-primary">
+      <div className="follow_link">
+        <a
+          href="https://bicentenary.bahai.org/the-bab/"
+          className="btn-primary"
+        >
           See how the World Celebrated
         </a>
       </div>
