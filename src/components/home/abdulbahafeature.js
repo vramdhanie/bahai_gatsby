@@ -79,8 +79,8 @@ export default styled(AbdulbahaFeature)`
   .feature-info h4 {
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: var(--secondary);
-    text-shadow: 1px 1px 2px var(--secondaryDark);
+    color: var(--mainWhite);
+    text-shadow: 1px 1px 2px var(--primaryDark);
   }
 
   border-bottom: solid 2px rgba(219, 132, 10, 0.2);
@@ -127,7 +127,7 @@ export default styled(AbdulbahaFeature)`
 
   @media screen and (min-width: 1200px) {
     .feature-center {
-      width: 95vw;
+      width: 90vw;
       max-width: 1170px;
     }
   }

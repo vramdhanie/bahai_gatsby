@@ -203,5 +203,8 @@ export default styled(Footer)`
       font-size: 1.2rem;
       text-align: center;
     }
+    .identity {
+      min-width: 200px;
+    }
   }
 `
