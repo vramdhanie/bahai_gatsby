@@ -183,7 +183,6 @@ export default styled(Footer)`
     text-decoration: none;
     color: var(--secondaryDark);
     padding: 0.5rem;
-    box-shadow: 0 0 1px 1px rgba(164, 87, 0, 0.2);
     transition: var(--mainTransition);
   }
 
