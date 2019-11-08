@@ -30,7 +30,7 @@ const Bicentenary = ({ data, className }) => (
           <p>
             The children of two children's classes of Kelly Village learned
             about the Báb during the weeks leading up to the bicentenary. They
-            practiced prayers and songs and performed them for teh entire
+            practiced prayers and songs and performed them for the entire
             community at the main event celebrating the bicentenary.
           </p>
         </article>
