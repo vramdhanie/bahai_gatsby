@@ -18,6 +18,10 @@ steps:
         "$BRANCH_NAME",
         "site-name",
         "preview-bahaitt",
+        "--project",
+        "$PROJECT_ID",
+        "--token",
+        "$_TOKEN",
       ]
   - name: "node"
     entrypoint: "./node_modules/.bin/firebase"
