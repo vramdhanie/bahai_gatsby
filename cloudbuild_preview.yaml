@@ -14,9 +14,7 @@ steps:
       [
         "target:apply",
         "hosting",
-        "target-name",
         "$BRANCH_NAME",
-        "site-name",
         "preview-bahaitt",
         "--project",
         "$PROJECT_ID",
