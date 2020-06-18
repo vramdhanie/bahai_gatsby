@@ -12,15 +12,13 @@ steps:
     entrypoint: "./node_modules/.bin/firebase"
     args:
       [
-        "deploy",
         "target:apply",
         "hosting",
         "target-name",
-        "preview",
-        "--project",
-        "$PROJECT_ID",
-        "--token",
-        "$_TOKEN",
+        "$BRANCH_NAME",
         "site-name",
         "preview-bahaitt",
       ]
+  - name: "node"
+    entrypoint: "./node_modules/.bin/firebase"
+    args: ["deploy", "--project", "$PROJECT_ID", "--token", "$_TOKEN"]

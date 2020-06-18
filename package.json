@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "bahaitt",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Website of the Baha'is of Trinidad and Tobago",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Vincent Ramdhanie <vramdhanie@gmail.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.4.5",
     "@mdx-js/react": "^1.4.5",
@@ -37,7 +37,9 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "bahai",
+    "trinidad",
+    "tobago"
   ],
   "license": "MIT",
   "scripts": {
