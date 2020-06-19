@@ -16,8 +16,8 @@ const BahaIntro = ({ className }) => {
         Bahá’u’lláh. A Bahá’í accepts the divine authority of the Báb and
         Bahá’u’lláh and of these appointed successors.
       </p>
-      <div class="follow_link">
-        <a href="https://www.bahai.org/bahaullah/" class="btn-primary">
+      <div className="follow_link">
+        <a href="https://www.bahai.org/bahaullah/" className="btn-primary">
           Read more about the life of Bahá’u’lláh.
         </a>
       </div>

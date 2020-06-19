@@ -14,8 +14,8 @@ const AbdulbahaIntro = ({ className }) => {
         Covenant” was also established in other texts, including Bahá’u’lláh’s
         Will and Testament.
       </p>
-      <div class="follow_link">
-        <a href="https://www.bahai.org/abdul-baha/" class="btn-primary">
+      <div className="follow_link">
+        <a href="https://www.bahai.org/abdul-baha/" className="btn-primary">
           Read more about the life of Abdu'l-Baha.
         </a>
       </div>
