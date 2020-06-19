@@ -17,7 +17,7 @@ const ActivityCard = ({ className, activity, excerpt, side }) => {
           <h2>{title}</h2>
           <p>{blurb}</p>
           <p>{excerpt}</p>
-          <Link to={slug} className="btn-primary">
+          <Link to={`/${slug}`} className="btn-primary">
             read more
           </Link>
         </div>
