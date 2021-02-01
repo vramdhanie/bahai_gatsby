@@ -31,5 +31,5 @@ steps:
         "--token",
         "$_TOKEN",
         "--only",
-        "hosting: $BRANCH_NAME",
+        "hosting:$BRANCH_NAME",
       ]
