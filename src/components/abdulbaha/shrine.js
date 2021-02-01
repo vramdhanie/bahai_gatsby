@@ -34,9 +34,9 @@ const Shrine = ({ className, images }) => {
           — The Universal House of Justice - Ridvan 2019
         </div>
       </blockquote>
-      <div className="follow_link">
-        <a href="https://news.bahai.org/story/1353/" className="btn-primary">
-          Read more about the Shrine of Abdu'l-Baha.
+      <div class="follow_link">
+        <a href="https://news.bahai.org/story/1353/" class="btn-primary">
+          Read more about the Shrine of ‘Abdu’l-Bahá.
         </a>
       </div>
       <div>
@@ -50,11 +50,11 @@ const Shrine = ({ className, images }) => {
         ))}
       </div>
       <blockquote>
-        The structure that is envisaged in the design seeks to honour 'Abdu'l-
-        Baha's unique position as the Centre of the Covenant, and to reflect at
-        once His lofty station and His humility. It creates a space of immense
-        sacredness, to which pilgrims and visitors will be drawn for the purpose
-        of prayer and meditation.
+        The structure that is envisaged in the design seeks to honour
+        ‘Abdu’l-Bahá's unique position as the Centre of the Covenant, and to
+        reflect at once His lofty station and His humility. It creates a space
+        of immense sacredness, to which pilgrims and visitors will be drawn for
+        the purpose of prayer and meditation.
         <div className="author">
           — The Universal House of Justice - Department of the Secretariat
         </div>
