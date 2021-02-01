@@ -9,7 +9,7 @@ const Form = ({ className }) => {
       <div className="center">
         <form
           className="form"
-          action="https://formspree.io/vramdhanie@gmail.com"
+          action="https://formspree.io/f/nsabahaitt@gmail.com"
           method="POST"
         >
           <div>

@@ -34,14 +34,14 @@ const Shrine = ({ className, images }) => {
           — The Universal House of Justice - Ridvan 2019
         </div>
       </blockquote>
-      <div class="follow_link">
-        <a href="https://news.bahai.org/story/1353/" class="btn-primary">
+      <div className="follow_link">
+        <a href="https://news.bahai.org/story/1353/" className="btn-primary">
           Read more about the Shrine of Abdu'l-Baha.
         </a>
       </div>
       <div>
         {images.map((image, index) => (
-          <div className="feature-img">
+          <div className="feature-img" key={index}>
             <Img
               fluid={image.node.childImageSharp.fluid}
               alt="Shrine of Bahá’u’lláh"
