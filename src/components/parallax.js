@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const Parallax = ({ className, children }) => {
   const data = useStaticQuery(graphql`
     query {
-      homeBg: file(relativePath: { eq: "bab_shrine_02.jpg" }) {
+      homeBg: file(relativePath: { eq: "shrine/shrine_05.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 4160) {
             ...GatsbyImageSharpFluid_withWebp

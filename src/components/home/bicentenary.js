@@ -57,7 +57,6 @@ const Bicentenary = ({ className }) => {
 export default styled(Bicentenary)`
   padding: 10px;
   font-weight: 300;
-  border-bottom: solid 2px rgba(219, 132, 10, 0.2);
   width: 95%;
   max-width: 800px;
   margin: 0 auto;

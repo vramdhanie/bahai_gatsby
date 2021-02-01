@@ -12,9 +12,12 @@ import Shrine from "../components/abdulbaha/shrine"
 const Abdulbaha = ({ className, data }) => {
   return (
     <Layout>
-      <SEO title="Abdu'l-Baha - The Centre of the Covenant" />
+      <SEO title="‘Abdu’l-Baha - The Centre of the Covenant" />
       <Hero img={data.abdulbahaBg.childImageSharp.fluid}>
-        <Banner title="Abdu'l-Baha" blurb="The Centre of the Covenant"></Banner>
+        <Banner
+          title="‘Abdu’l-Baha"
+          blurb="The Centre of the Covenant"
+        ></Banner>
       </Hero>
       <Main>
         <AbdulbahaIntro />

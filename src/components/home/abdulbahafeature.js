@@ -84,8 +84,7 @@ export default styled(AbdulbahaFeature)`
   }
 
   border-bottom: solid 2px rgba(219, 132, 10, 0.2);
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+
   background: #5aa0ae;
 
   @media screen and (min-width: 768px) {

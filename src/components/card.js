@@ -12,13 +12,11 @@ const Card = ({ className, activity, excerpt }) => {
         <Image fluid={img} />
       </div>
       <div className="info">
-        <div>
-          <h2>{title}</h2>
-          <p>{excerpt}</p>
-          <Link to={slug} className="link">
-            read more
-          </Link>
-        </div>
+        <h2>{title}</h2>
+        <p>{excerpt}</p>
+        <Link to={slug} className="link">
+          read more
+        </Link>
       </div>
     </article>
   )
@@ -32,10 +30,17 @@ export default styled(Card)`
   padding: 1rem;
   text-align: center;
   border-bottom: solid 2px rgba(219, 132, 10, 0.2);
-
+  display: flex;
+  flex-direction: column;
   align-self: stretch;
+  .image {
+    flex: 1;
+  }
   .info {
+    flex: 3;
     padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
   }
   .info h2 {
     font-size: 30px;
@@ -49,6 +54,7 @@ export default styled(Card)`
   .info p {
     padding: 20px 0 30px 0;
     text-align: left;
+    flex: 1;
   }
   .link {
     border: 1px solid var(--primaryDark);

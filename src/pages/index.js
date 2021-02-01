@@ -6,6 +6,7 @@ import Parallax from "../components/parallax"
 import Banner from "../components/banner"
 import Main from "../components/main"
 import Bicentenary from "../components/home/bicentenary"
+import Centenary from "../components/home/centenary"
 import HomeFeature from "../components/home/homefeature"
 import CommunityFeature from "../components/home/communityFeature"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
@@ -19,18 +20,20 @@ const IndexPage = ({ data }) => {
       <SEO title="Bahá’ís of Trinidad and Tobago" />
       <Parallax>
         <Banner
-          title="The Bicentenary of the Birth of the Báb"
-          blurb="Celebrating the 200th anniversary of the Birth of the Báb, the one who foretold the coming of Bahá’u’lláh, the founder of the Baha'i Faith."
-        />
-        <AniLink fade to="/bicentenary" className="btn-white btn-small">
-          Read more
-        </AniLink>
+          title="The Centenary of the Ascension of ‘Abdu’l-Baha"
+          blurb="Commemorating the centenary of ‘Abdu’l-Baha's Ascension and the strength of the Covenant"
+        >
+          <AniLink fade to="/centenary" className="btn-white btn-small">
+            Read more
+          </AniLink>
+        </Banner>
       </Parallax>
       <Main>
-        <Bicentenary />
+        <Centenary />
         <HomeFeature />
         <CommunityFeature activities={data.activities.edges} />
         <AbdulbahaFeature />
+        <Bicentenary />
       </Main>
     </Layout>
   )
