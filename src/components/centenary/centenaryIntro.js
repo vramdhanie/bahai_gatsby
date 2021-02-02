@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Title from "../title"
+import WhiteSection from "../whiteSection"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -23,13 +24,24 @@ const CentenaryIntro = ({ className }) => {
     },
   } = useStaticQuery(getImage)
   return (
-    <section className={className}>
-      <Title title="Centenary of" subtitle="the Ascension of ‘Abdu’l-Bahá" />
-      <div className="image">
-        <Img fluid={fluid} alt="‘Abdu’l-Bahá" />
+    <WhiteSection title="Centenary of" subtitle="the Ascension of ‘Abdu’l-Bahá">
+      <div>
+        <div className="image">
+          <Img fluid={fluid} alt="‘Abdu’l-Bahá" />
+        </div>
+        <p className="caption">‘Abdu’l-Bahá (1844-1921)</p>
       </div>
-      <p className="caption">‘Abdu’l-Bahá (1844-1921)</p>
-    </section>
+      <div>
+        <blockquote>
+          The divine religions were founded for the purpose of unifying humanity
+          and establishing universal peace. Any movement which brings about
+          peace and agreement in human society is truly a divine movement; any
+          reform which causes people to come together under the shelter of the
+          same tabernacle is surely animated by heavenly motives.
+          <div className="author">— ‘Abdu’l-Bahá</div>
+        </blockquote>
+      </div>
+    </WhiteSection>
   )
 }
 

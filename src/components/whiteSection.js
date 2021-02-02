@@ -24,6 +24,22 @@ export default styled(WhiteSection)`
   border-bottom: solid 2px rgba(219, 132, 10, 0.2);
   background: var(--mainWhite);
 
+  .image {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .caption {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  @media screen and (min-width: 480px) {
+    .image {
+      width: 60%;
+      max-width: 600px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     .feature-center {
       display: grid;
