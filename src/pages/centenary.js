@@ -8,7 +8,6 @@ import Banner from "../components/banner"
 import Main from "../components/main"
 import CentenaryIntro from "../components/centenary/centenaryIntro"
 import CentenaryFooter from "../components/centenary/centenaryFooter"
-import ColourSection from "../components/colourSection"
 import styled from "styled-components"
 import Title from "../components/title"
 
