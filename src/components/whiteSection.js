@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import Title from "./title"
 
-const WhiteSection = ({ className, title, subtitle, children }) => {
+const WhiteSection = ({ className, title, subtitle, children, style = {} }) => {
   return (
-    <section className={className}>
+    <section className={className} style={style}>
       <Title title={title} subtitle={subtitle} />
       <div className="feature-center">{children}</div>
     </section>

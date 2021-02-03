@@ -24,7 +24,11 @@ const CentenaryIntro = ({ className }) => {
     },
   } = useStaticQuery(getImage)
   return (
-    <WhiteSection title="Centenary of" subtitle="the Ascension of ‘Abdu’l-Bahá">
+    <WhiteSection
+      title="Centenary of"
+      subtitle="the Ascension of ‘Abdu’l-Bahá"
+      style={{ borderTopLeftRadius: "6px", borderTopRightRadius: "6px" }}
+    >
       <div>
         <div className="image">
           <Img fluid={fluid} alt="‘Abdu’l-Bahá" />
@@ -51,6 +55,7 @@ export default styled(CentenaryIntro)`
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
+
   .image {
     width: 90%;
     margin: 0 auto;
