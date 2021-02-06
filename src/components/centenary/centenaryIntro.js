@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Title from "../title"
 import WhiteSection from "../whiteSection"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
