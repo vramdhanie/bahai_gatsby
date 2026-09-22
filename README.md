@@ -12,7 +12,7 @@ site built with Next.js (static export), TypeScript, and Tailwind CSS.
 Originally a Gatsby 2 site (hence the repository name); migrated in 2026 with
 the original design preserved.
 
-Live at [bahaitt.com](https://bahaitt.com).
+Live at [bahaitt.org](https://bahaitt.org).
 
 ## How it works
 
@@ -50,7 +50,7 @@ own Firebase project (`.github/workflows/` + `firebase.json` + `.firebaserc`):
 
 - `preview` → the `bahaitt-preview` project
   ([bahaitt-preview.web.app](https://bahaitt-preview.web.app)), for review
-- `master` → the `bahaitt` project → [bahaitt.com](https://bahaitt.com)
+- `master` → the `bahaitt` project → [bahaitt.org](https://bahaitt.org)
 - pull requests → a temporary 30-day preview channel on the preview project
   (the URL is posted on the PR)
 

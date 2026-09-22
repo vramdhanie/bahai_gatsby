@@ -4,7 +4,7 @@ import { getAllActivities } from "@/lib/activities";
 
 export const dynamic = "force-static";
 
-const BASE = "https://bahaitt.com";
+const BASE = "https://bahaitt.org";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [

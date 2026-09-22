@@ -11,7 +11,7 @@ const SITE_DESCRIPTION =
   "The official website of the Bahá’ís of Trinidad and Tobago.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bahaitt.com"),
+  metadataBase: new URL("https://bahaitt.org"),
   title: {
     default: SITE_TITLE,
     template: `%s | ${SITE_TITLE}`,
