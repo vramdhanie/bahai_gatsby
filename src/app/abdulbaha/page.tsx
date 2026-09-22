@@ -87,7 +87,7 @@ function Shrine() {
         {SHRINE_IMAGES.map((image) => (
           <div className="feature-img" key={image}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={image} alt="Shrine of Bahá’u’lláh" />
+            <img src={image} alt="Shrine of ‘Abdu’l-Bahá" loading="lazy" />
           </div>
         ))}
       </div>

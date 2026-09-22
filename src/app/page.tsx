@@ -14,7 +14,7 @@ function Centenary() {
       <div className="feature-center">
         <div className="image">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/abdul-baha.jpg" alt="‘Abdu’l-Bahá" />
+          <img src="/images/abdul-baha.jpg" alt="‘Abdu’l-Bahá" loading="lazy" />
           <p className="caption">‘Abdu’l-Bahá (1844-1921)</p>
         </div>
         <div className="text">
@@ -22,7 +22,7 @@ function Centenary() {
             From Ridvan (21 April) 2021 to Ridvan 2022 the Bahá’í world will be
             commemorating an &quot;infinitely poignant moment in the history of
             mankind&quot;, when the eldest son of Bahá’u’lláh, ‘Abdu’l-Bahá,
-            passed away from this earthly plain and ascended to the Abha
+            passed away from this earthly plane and ascended to the Abha
             kingdom.
           </p>
           <blockquote>
@@ -51,7 +51,11 @@ function HomeFeature() {
       <div className="feature-center">
         <article className="feature-img">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/baha_shrine_01.jpg" alt="Shrine of Bahá’u’lláh" />
+          <img
+            src="/images/baha_shrine_01.jpg"
+            alt="Shrine of Bahá’u’lláh"
+            loading="lazy"
+          />
         </article>
         <article className="feature-info">
           <h4>The Glory of God</h4>
@@ -95,7 +99,11 @@ function AbdulbahaFeature() {
         </article>
         <article className="feature-img">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/shrine/shrine_04.jpg" alt="Shrine of Abdu'l-Baha" />
+          <img
+            src="/images/shrine/shrine_04.jpg"
+            alt="Shrine of Abdu'l-Baha"
+            loading="lazy"
+          />
         </article>
       </div>
     </section>
@@ -107,7 +115,7 @@ function Bicentenary() {
     <div className="home-bicentenary">
       <div className="image">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/bicentenary.png" alt="Bicentenary Logo" />
+        <img src="/images/bicentenary.png" alt="Bicentenary Logo" loading="lazy" />
       </div>
       <p>
         On 29 and 30 October 2019 the Baha&apos;is of Trinidad and Tobago will

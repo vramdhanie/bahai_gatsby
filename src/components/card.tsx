@@ -8,7 +8,7 @@ export default function Card({ activity }: { activity: Activity }) {
     <article className="card">
       <div className="image">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={image} alt={title} />
+        <img src={image} alt={title} loading="lazy" />
       </div>
       <div className="info">
         <h2>{title}</h2>

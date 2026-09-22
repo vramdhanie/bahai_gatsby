@@ -20,7 +20,7 @@ function CentenaryIntro() {
       <div>
         <div className="image">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/abdul-baha.jpg" alt="‘Abdu’l-Bahá" />
+          <img src="/images/abdul-baha.jpg" alt="‘Abdu’l-Bahá" loading="lazy" />
         </div>
         <p className="caption">‘Abdu’l-Bahá (1844-1921)</p>
       </div>
@@ -96,7 +96,7 @@ export default function CentenaryPage() {
           <div className="banner-center">
             ‘Abdu’l‑Bahá was appointed by Baha&apos;u&apos;llah as the only
             authorized interpreter of His writings, the perfect exemplar of the
-            Faith&apos;s spirit and teachings and as the Centre of His might
+            Faith&apos;s spirit and teachings and as the Centre of His mighty
             Covenant.
           </div>
         </section>

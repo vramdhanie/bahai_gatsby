@@ -23,7 +23,7 @@ function BicentenaryIntro() {
       <Title title="Bicentenary of" subtitle="the birth of the Báb" />
       <div className="image">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/bicentenary_02.jpg" alt="Bicentenary Logo" />
+        <img src="/images/bicentenary_02.jpg" alt="Bicentenary Logo" loading="lazy" />
       </div>
       <p>
         On 29 AND 30 October 2019, across Trinidad and Tobago and in countless
@@ -111,7 +111,12 @@ export default function BicentenaryPage() {
           <article className="image-group">
             {KELLY_IMAGES.map((image) => (
               // eslint-disable-next-line @next/next/no-img-element
-              <img key={image} src={image} alt="Children celebrate in Kelly" />
+              <img
+                key={image}
+                src={image}
+                alt="Children celebrate in Kelly"
+                loading="lazy"
+              />
             ))}
           </article>
         </ColourSection>
@@ -122,6 +127,7 @@ export default function BicentenaryPage() {
             <img
               src="/images/bicentenary_banner.png"
               alt="Banner celebrating the Báb"
+              loading="lazy"
             />
           </div>
         </section>
