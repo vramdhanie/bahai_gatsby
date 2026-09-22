@@ -2,12 +2,12 @@
   "hosting": [
     {
       "target": "master",
-      "public": "public",
+      "public": "out",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     },
     {
       "target": "preview",
-      "public": "public",
+      "public": "out",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     }
   ]
