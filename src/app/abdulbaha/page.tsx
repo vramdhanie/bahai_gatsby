@@ -7,6 +7,8 @@ import Title from "@/components/title";
 
 export const metadata: Metadata = {
   title: "‘Abdu’l-Baha - The Centre of the Covenant",
+  description:
+    "‘Abdu’l-Bahá, the Centre of Bahá’u’lláh’s Covenant, and the Shrine being built in His honour in the Riḍván Garden.",
 };
 
 const SHRINE_IMAGES = [

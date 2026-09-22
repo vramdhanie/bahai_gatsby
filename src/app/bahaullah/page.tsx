@@ -7,6 +7,8 @@ import Title from "@/components/title";
 
 export const metadata: Metadata = {
   title: "Bahá’u’lláh - The Glory of God",
+  description:
+    "Bahá’u’lláh, the Glory of God, founder of the Bahá’í Faith, and the Covenant that has preserved the unity of the Faith.",
 };
 
 export default function BahaullahPage() {

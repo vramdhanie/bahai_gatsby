@@ -8,6 +8,8 @@ import Title from "@/components/title";
 
 export const metadata: Metadata = {
   title: "Contact",
+  description:
+    "Get in touch with the Bahá’ís of Trinidad and Tobago — send a message or reach the National Bahá’í Centre in Port of Spain.",
 };
 
 export default function ContactPage() {

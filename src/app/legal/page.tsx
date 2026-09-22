@@ -4,6 +4,8 @@ import Main from "@/components/main";
 
 export const metadata: Metadata = {
   title: "Legal",
+  description:
+    "Copyright, privacy, and terms of use for the website of the Bahá’ís of Trinidad and Tobago.",
 };
 
 export default function LegalPage() {

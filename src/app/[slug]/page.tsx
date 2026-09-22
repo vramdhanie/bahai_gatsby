@@ -25,6 +25,7 @@ export async function generateMetadata({
   const activity = getActivityBySlug(slug);
   return {
     title: activity ? `Community Building | ${activity.title}` : "Not found",
+    description: activity?.blurb,
   };
 }
 

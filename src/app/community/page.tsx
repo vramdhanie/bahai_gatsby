@@ -9,6 +9,8 @@ import { getAllActivities } from "@/lib/activities";
 
 export const metadata: Metadata = {
   title: "Community Building - What Bahá’ís do",
+  description:
+    "The community-building work of the Bahá’ís of Trinidad and Tobago: children’s classes, junior youth groups, study circles, and devotional gatherings.",
 };
 
 function CommunityIntro() {

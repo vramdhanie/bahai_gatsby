@@ -8,6 +8,8 @@ import { WhiteSection } from "@/components/whiteSection";
 
 export const metadata: Metadata = {
   title: "The Centenary of the Ascension of ‘Abdu’l‑Bahá",
+  description:
+    "Commemorating the centenary of the Ascension of ‘Abdu’l-Bahá (2021–2022) in Trinidad and Tobago.",
 };
 
 function CentenaryIntro() {

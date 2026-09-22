@@ -21,9 +21,10 @@ export const metadata: Metadata = {
     type: "website",
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
+    images: [{ url: "/images/og.jpg", width: 1200, height: 630 }],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     creator: "@vramdhanie",
   },
 };

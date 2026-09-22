@@ -8,6 +8,8 @@ import { ColourSection } from "@/components/whiteSection";
 
 export const metadata: Metadata = {
   title: "Bicentenary of the birth of the Báb",
+  description:
+    "How Trinidad and Tobago celebrated the 200th anniversary of the birth of the Báb in October 2019.",
 };
 
 const KELLY_IMAGES = [
