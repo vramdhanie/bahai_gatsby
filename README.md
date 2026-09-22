@@ -1,5 +1,6 @@
 # Bahá’ís of Trinidad and Tobago
 
+[![Deploy](https://img.shields.io/github/actions/workflow/status/vramdhanie/bahai_gatsby/deploy-prod.yml?branch=master&label=deploy&logo=github)](https://github.com/vramdhanie/bahai_gatsby/actions/workflows/deploy-prod.yml)
 [![License: MIT](https://img.shields.io/github/license/vramdhanie/bahai_gatsby?color=green)](LICENSE)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -44,12 +45,16 @@ file server to test the production build).
 
 ## Deployment
 
-Google Cloud Build deploys on push, mapping the branch to a Firebase Hosting
-target of the same name (`cloudbuild.yaml` + `firebase.json`):
+GitHub Actions deploys on push to Firebase Hosting. Each branch maps to its
+own Firebase project (`.github/workflows/` + `firebase.json` + `.firebaserc`):
 
-- `preview` → the preview site, for review
-- `master` → [bahaitt.com](https://bahaitt.com)
+- `preview` → the `bahaitt-preview` project
+  ([bahaitt-preview.web.app](https://bahaitt-preview.web.app)), for review
+- `master` → the `bahaitt` project → [bahaitt.com](https://bahaitt.com)
+- pull requests → a temporary 30-day preview channel on the preview project
+  (the URL is posted on the PR)
 
-The trigger supplies the substitutions `_NODE_VERSION` (must be ≥ 20 for
-Next.js 16), `_TOKEN` (Firebase CI token), and `_SITE_ID`. The usual flow is
-push to `preview`, check the preview site, then merge to `master`.
+Authentication is via the repo secrets `FIREBASE_SERVICE_ACCOUNT_BAHAITT`
+and `FIREBASE_SERVICE_ACCOUNT_BAHAITT_PREVIEW`, created by
+`firebase init hosting:github`. The usual flow is push to `preview`, check
+the preview site, then merge to `master`.

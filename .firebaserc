@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "default": "bahaitt",
+    "prod": "bahaitt",
+    "preview": "bahaitt-preview"
+  },
+  "targets": {
+    "bahaitt": {
+      "hosting": {
+        "master": ["bahaitt"]
+      }
+    },
+    "bahaitt-preview": {
+      "hosting": {
+        "preview": ["bahaitt-preview"]
+      }
+    }
+  }
+}
