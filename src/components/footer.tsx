@@ -61,14 +61,14 @@ export default function Footer() {
       <section className="faded">
         <div>© {new Date().getFullYear()} Bahá’ís of Trinidad and Tobago</div>
         <div>
-          Built with
-          <span className="built">
-            <a href="https://nextjs.org">Next.js</a>
-          </span>
-          by
-          <span className="vincent">
-            <a href="https://vincentramdhanie.com">Vincent</a>
-          </span>
+          <a
+            href="https://vincentramdhanie.com"
+            className="vincent-logo"
+            title="Vincent Ramdhanie"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/vincent-logo.png" alt="Vincent Ramdhanie" />
+          </a>
         </div>
       </section>
     </footer>

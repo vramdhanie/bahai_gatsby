@@ -340,21 +340,19 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.site-footer .built,
-.site-footer .vincent {
-  padding: 2px;
+.site-footer .vincent-logo {
+  display: inline-block;
+  opacity: 0.6;
+  transition: var(--mainTransition);
 }
-.site-footer .built a,
-.site-footer .vincent a,
-.site-footer .built a:visited,
-.site-footer .vincent a:visited {
-  text-decoration: none;
-  color: var(--secondaryDark);
-  font-weight: bold;
+.site-footer .vincent-logo:hover {
+  opacity: 1;
 }
-.site-footer .built a:hover,
-.site-footer .vincent a:hover {
-  color: var(--secondary);
+.site-footer .vincent-logo img {
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-bottom: 0;
 }
 .site-footer .footer_top {
   display: flex;
