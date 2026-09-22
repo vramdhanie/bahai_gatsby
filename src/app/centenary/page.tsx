@@ -79,7 +79,7 @@ export default function CentenaryPage() {
           <Title title="The Events" subtitle="of this year" />
           <article className="feature-info">
             <div className="banner-center">
-              <h4>How Trinidad and Tobago Remembers ‘Abdu’l‑Bahá</h4>
+              <h3>How Trinidad and Tobago Remembers ‘Abdu’l‑Bahá</h3>
               <p>
                 Throughout the year from Ridvan (April 21) 2021 to Ridvan 2022
                 a series of special occasions will be marked by the Bahá’ís of
@@ -106,7 +106,7 @@ export default function CentenaryPage() {
           <Title title="His Will" subtitle="and Testament" />
           <article className="feature-info">
             <div className="banner-center">
-              <h4>The Significance of His Will and Testament</h4>
+              <h3>The Significance of His Will and Testament</h3>
               <blockquote className="oncolor">
                 We are conscious that the coming year will also mark a century
                 since His Will and Testament—that “momentous”, “historic”,

@@ -12,7 +12,7 @@ export default function ActivityCard({ activity }: { activity: Activity }) {
       </div>
       <div className="info">
         <div>
-          <h2>{title}</h2>
+          <h3>{title}</h3>
           <p>{blurb}</p>
           <p>{excerpt}</p>
           <Link href={`/${slug}`} className="btn-primary">

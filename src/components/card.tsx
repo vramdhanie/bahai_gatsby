@@ -11,7 +11,7 @@ export default function Card({ activity }: { activity: Activity }) {
         <img src={image} alt={title} loading="lazy" />
       </div>
       <div className="info">
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <p>{excerpt}</p>
         <Link href={`/${slug}`} className="link">
           read more

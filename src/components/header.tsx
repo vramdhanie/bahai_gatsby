@@ -11,11 +11,11 @@ export default function Header() {
         <Link href="/" className="siteNameLink">
           <Logo />
         </Link>
-        <h1 className="siteName">
+        <div className="siteName">
           <Link href="/" className="siteNameLink">
             {SITE_TITLE}
           </Link>
-        </h1>
+        </div>
       </div>
     </header>
   );

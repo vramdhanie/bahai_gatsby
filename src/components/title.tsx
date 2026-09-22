@@ -6,10 +6,10 @@ interface TitleProps {
 export default function Title({ title, subtitle }: TitleProps) {
   return (
     <div className="page-title">
-      <h4>
+      <h2>
         <span className="title">{title}</span>
         <span>{subtitle}</span>
-      </h4>
+      </h2>
     </div>
   );
 }

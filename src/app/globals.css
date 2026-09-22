@@ -10,6 +10,7 @@
 :root {
   --primary: #26717f;
   --primaryLight: #5aa0ae;
+  --primaryMid: #3d7f8d;
   --primaryDark: rgb(0, 69, 83);
   --secondary: rgb(219, 132, 10);
   --secondaryLight: #ffb446;
@@ -273,6 +274,25 @@ pre code {
   color: var(--primary);
 }
 
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 2000;
+  background: var(--primaryDark);
+  color: var(--mainWhite);
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--secondaryDark);
+  outline-offset: 2px;
+}
+
 .content {
   min-height: 100vh;
   display: flex;
@@ -304,6 +324,9 @@ main {
 }
 .site-header .siteName {
   font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 0 0 1.45rem;
   text-shadow: 00 2px 1px rgba(0, 0, 0, 0.4);
   padding-left: 5px;
 }
@@ -532,7 +555,7 @@ main {
   font-size: 2.2rem;
   margin-bottom: 2rem;
 }
-.page-title h4 {
+.page-title h2 {
   text-align: center;
   letter-spacing: 6px;
   color: var(--primary);
@@ -554,7 +577,14 @@ main {
   background: var(--mainWhite);
 }
 .colour-section {
-  background: var(--primaryLight);
+  background: var(--primaryMid);
+  color: var(--mainWhite);
+}
+.colour-section .page-title h2 {
+  color: rgba(255, 255, 255, 0.85);
+}
+.colour-section .page-title .title {
+  color: var(--mainWhite);
 }
 .white-section .feature-center,
 .colour-section .feature-center {
@@ -622,7 +652,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-.card .info h2 {
+.card .info h3 {
   font-size: 30px;
   text-transform: capitalize;
   margin-bottom: 10px;
@@ -676,7 +706,7 @@ main {
   padding: 1rem 0;
   margin-top: 5px;
 }
-.activity-card .info h2 {
+.activity-card .info h3 {
   font-size: 30px;
   text-transform: capitalize;
   margin-bottom: 10px;
@@ -752,7 +782,7 @@ main {
 }
 .gate-album .date {
   font-weight: 300;
-  color: var(--primaryLight);
+  color: var(--primary);
   font-size: 0.9rem;
 }
 
@@ -762,7 +792,16 @@ main {
   font-weight: 300;
   padding: 4rem 0;
   border-bottom: solid 2px rgba(219, 132, 10, 0.2);
-  background: #5aa0ae;
+  background: var(--primaryMid);
+  color: var(--mainWhite);
+}
+.home-feature .page-title h2,
+.abdulbaha-feature .page-title h2 {
+  color: rgba(255, 255, 255, 0.85);
+}
+.home-feature .page-title .title,
+.abdulbaha-feature .page-title .title {
+  color: var(--mainWhite);
 }
 .home-feature {
   margin-bottom: 10px;
@@ -789,8 +828,8 @@ main {
   box-shadow: var(--lightShadow);
   margin-bottom: 0;
 }
-.home-feature .feature-info h4,
-.abdulbaha-feature .feature-info h4 {
+.home-feature .feature-info h3,
+.abdulbaha-feature .feature-info h3 {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: var(--mainWhite);
@@ -955,8 +994,9 @@ main {
   }
 }
 /* pages/bicentenary.js page-level styles */
-.bicentenary-main .feature-info h4 {
+.bicentenary-main .feature-info h3 {
   color: var(--mainWhite);
+  font-size: 1rem;
 }
 .bicentenary-main .image-group img {
   width: 100%;
@@ -993,12 +1033,20 @@ main {
 }
 
 /* pages/centenary.js page-level styles */
-.centenary-main .feature-info h4 {
+.centenary-main .feature-info h3 {
   color: var(--mainWhite);
+  font-size: 1rem;
 }
 .centenary-main .colourSection {
   padding: 10px;
-  background: var(--primaryLight);
+  background: var(--primaryMid);
+  color: var(--mainWhite);
+}
+.centenary-main .colourSection .page-title h2 {
+  color: rgba(255, 255, 255, 0.85);
+}
+.centenary-main .colourSection .page-title .title {
+  color: var(--mainWhite);
 }
 .centenary-main .banner {
   padding: 4rem 0;

@@ -101,7 +101,7 @@ export default function BicentenaryPage() {
         <TheGateAlbum />
         <ColourSection title="The Children" subtitle="of Kelly Village">
           <article className="feature-info">
-            <h4>Learning about the new Dawn</h4>
+            <h3>Learning about the new Dawn</h3>
             <p>
               The children of two children&apos;s classes of Kelly Village
               learned about the Báb during the weeks leading up to the

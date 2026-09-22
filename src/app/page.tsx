@@ -58,7 +58,7 @@ function HomeFeature() {
           />
         </article>
         <article className="feature-info">
-          <h4>The Glory of God</h4>
+          <h3>The Glory of God</h3>
           <p>
             Bahá’u’lláh—the “Glory of God”—is the Promised One foretold by the
             Báb and all of the Divine Messengers of the past. Bahá’u’lláh
@@ -84,7 +84,7 @@ function AbdulbahaFeature() {
       <Title title="Abdu'l-Baha" subtitle="The Centre of the Covenant" />
       <div className="feature-center">
         <article className="feature-info">
-          <h4>The Master</h4>
+          <h3>The Master</h3>
           <p>
             In His Most Holy Book, Bahá’u’lláh established a covenant with His
             followers, enjoining them to turn, after His passing, to
